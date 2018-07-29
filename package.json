@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "ng build --prod && angular-cli-ghpages --branch master"
+    "deploy": "ng build --prod --aot --base-href \"https://wmoore98.github.io/ng-recipe/\" && ngh --dir dist/class-project --repo=https://GH_TOKEN@github.com/wmoore98/ng-recipe.git"
   },
   "private": true,
   "dependencies": {
